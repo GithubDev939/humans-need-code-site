@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href = "{{ url_for('static',filename='styles/main.css') }}">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Humans Need Code</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <a href = "{{ url_for('home') }}" id = logo-id>
+                <div class="logo">
+                    <span>H</span>
+                    <span>U</span>
+                    <span>M</span>
+                    <span>A</span>
+                    <span>N</span>
+                    <span>S</span><br>
+                    <span>N</span>
+                    <span>E</span>
+                    <span>E</span>
+                    <span>D</span><br>
+                    <span>C</span>
+                    <span>O</span>
+                    <span>D</span>
+                    <span>E</span>
+                    <span>.</span>
+                </div>
+            </a>
+            
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+              <!-- NAVIGATION MENUS -->
+              <div class="menu">
+                <li><a href="/">
+                    <span>H</span>
+                    <span>O</span>
+                    <span>M</span>
+                    <span>E</span>
+                </a></li>
+                <li><a href="/">
+                    <span>C</span>
+                    <span>O</span>
+                    <span>N</span>
+                    <span>T</span>
+                    <span>A</span>
+                    <span>C</span>
+                    <span>T</span>
+                </a></li>
+              </div>
+            </ul>
+          </nav>
+        <div id = "inner-body">
+            <div class = "slide" id = "about">
+                <h1>Take <span>advantage</span> of the internet's power.</h1>
+                <p>
+                    As society grows more technology-dependent, many businesses and nonprofits are missing out on the benefits that web-based platforms have to offer.
+                    Coincidentally, computer science (CS) has become a popular career path for teens, who have the potential and programming knowledge to help these organizations succeed in this domain. Started in the summer of 2022, <em>Humans Need Code</em> is 
+                    a program that connects students who want to combine their love of social good and programming with nonprofits who need assistance on coding-related projects. We offer free, programming services for not-for-profit 
+                    organizations. Our areas of work range anywhere from website development to data analysis and more. Furthermore, anyone is allowed to join regardless of their age or skill level--there are many more positions than just programmers.
+                </p>
+            </div>
+            <div class = "slide" id = "mission">
+                <h1><span>Our</span> mission.</h1>
+                <p>
+                    Our mission is to help both nonprofits and student interested in computer science to benefit from each others needs. Our program supports young professionals in our community by giving letting them gain meaningful work experience,
+                    while also impacting communities in need using the expertise of our members. We also foster growth as a leader and collaboration skills by letting students see their assigned projects end-to-end with the help of their teammates. 
+                    We try to make a difference to give students real-world experience and an accessible path into the tech industry and future.
+                </p>
+            </div>
+            <div id = "nonprofit-connect-background">
+                <div class = "slide" id = "nonprofit-connect">
+                    <h1>Have a project?</h1>
+                    <p>
+                        Any organization or business with an software project that will benefit society free-of-cost is welcome to submit their project request/idea. On evaluation, we will communicate with you via eMail to comprehend the full scope of
+                        your request. <br>
+                    </p>
+                    <div class="menu" id = "submit-button">
+                        <li><a href="{{url_for('proposal_form')}}">
+                            <span>S</span>
+                            <span>U</span>
+                            <span>B</span>
+                            <span>M</span>
+                            <span>I</span>
+                            <span>T</span>
+                            <span> </span>
+                            <span>Y</span>
+                            <span>O</span>
+                            <span>U</span>
+                            <span>R</span>
+                            <span> </span>
+                            <span>P</span>
+                            <span>R</span>
+                            <span>O</span>
+                            <span>J</span>
+                            <span>E</span>
+                            <span>C</span>
+                            <span>T</span>
+                            <span> </span>
+                            <span>P</span>
+                            <span>R</span>
+                            <span>O</span>
+                            <span>P</span>
+                            <span>O</span>
+                            <span>S</span>
+                            <span>A</span>
+                            <span>L</span>
+                        </a></li>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

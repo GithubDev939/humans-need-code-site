@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% from "_formhelpers.html" import render_field %}
+        <link rel="stylesheet" href = "{{ url_for('static',filename='styles/main.css') }}">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Humans Need Code</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <a href = "{{ url_for('home') }}" id = logo-id>
+                <div class="logo">
+                    <span>H</span>
+                    <span>U</span>
+                    <span>M</span>
+                    <span>A</span>
+                    <span>N</span>
+                    <span>S</span><br>
+                    <span>N</span>
+                    <span>E</span>
+                    <span>E</span>
+                    <span>D</span><br>
+                    <span>C</span>
+                    <span>O</span>
+                    <span>D</span>
+                    <span>E</span>
+                    <span>.</span>
+                </div>
+            </a>
+            
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+              <!-- NAVIGATION MENUS -->
+              <div class="menu">
+                <li><a href="/">
+                    <span>H</span>
+                    <span>O</span>
+                    <span>M</span>
+                    <span>E</span>
+                </a></li>
+                <li><a href="/">
+                    <span>C</span>
+                    <span>O</span>
+                    <span>N</span>
+                    <span>T</span>
+                    <span>A</span>
+                    <span>C</span>
+                    <span>T</span>
+                </a></li>
+              </div>
+            </ul>
+          </nav>
+        <div id = "form-border">
+            <form method = "post" novalidate>
+                {{ form.csrf_token }}
+                <dl>
+                    {{ render_field(form.name) }}
+                    {{ render_field(form.email) }}
+                    {{ render_field(form.nonprofit) }}
+                    {{ render_field(form.nonprofit_position) }}
+                    {{ render_field(form.location) }}
+                    {{ render_field(form.org_email) }}
+                    {{ render_field(form.links) }}
+                    {{ render_field(form.project_proposal) }}
+                    {{ render_field(form.ideas_elaboration) }}
+                    {{ render_field(form.other) }}
+                    {{ render_field(form.submit) }}
+                </dl>
+            </form>
+        </div>
+        
+    </body>
+</html>
