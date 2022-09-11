@@ -9,7 +9,7 @@ def home():
 
 @app.route("/project_proposal", methods=["POST", "GET"])
 def proposal_form():
-    return render_template("proposal_handler.html", form=form)
+    return render_template("proposal_handler.html")
 
 app = Flask(__name__)
 @app.route('/update_server', methods=['POST'])
